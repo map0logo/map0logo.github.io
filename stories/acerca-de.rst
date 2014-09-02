@@ -11,10 +11,8 @@ Mapologo
 
 twitter @mapologo
 
-.. slides::
-
-   /galleries/mapologo/fpalm-junio2010_400x400.thumbnail.png
-   /galleries/mapologo/lupi_in_bici.thumbnail.png
+.. image:: /galleries/mapologo/fpalm-junio2010_400x400.thumbnail.png
+   :alt: mapologo 2010
 
 .. code-block:: console
 
