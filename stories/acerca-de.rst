@@ -11,9 +11,16 @@ Mapologo
 
 twitter @mapologo
 
-   geomática poética, geomancia matemática,
-   hacktivista, Python & R, Pop & Rock Indie,
-   Otaku & Geek, Zen & K, Utopía & Emancipación
+.. slides::
+
+   /galleries/mapologo/fpalm-junio2010_400x400.thumbnail.png
+   /galleries/mapologo/lupi_in_bici.thumbnail.png
+
+.. code-block:: console
+
+   $ geomática poética, geomancia matemática,
+   $ hacktivista, Python & R, Pop & Rock Indie,
+   $ Otaku & Geek, Zen & K, Utopía & Emancipación
 
 Tatuy, Venezuela
 
