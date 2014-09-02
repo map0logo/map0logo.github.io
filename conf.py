@@ -21,7 +21,7 @@ BLOG_AUTHOR = "Francisco Palm"  # (translatable)
 BLOG_TITLE = "map0logo"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://map0logo.github.io"
+SITE_URL = "http://map0logo.github.io/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://map0logo.github.io"
