@@ -5,10 +5,6 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://map0logo.github.io/galleries/rss.xml</loc>
-  <lastmod>2014-09-01</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://map0logo.github.io/rss.xml</loc>
   <lastmod>2014-09-01</lastmod>
  </sitemap>
