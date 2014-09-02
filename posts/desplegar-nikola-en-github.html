@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Test | map0logo</title>
+    <title>Desplegar nikola en github | map0logo</title>
 
     
             <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
@@ -11,7 +11,7 @@
     
             <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
 
-      <link rel="canonical" href="http://map0logo.github.io/posts/test.html">
+      <link rel="canonical" href="http://map0logo.github.io/posts/desplegar-nikola-en-github.html">
 
 
 
@@ -25,9 +25,14 @@
 
     <meta name="author" content="Francisco Palm">
     
-        <meta name="og:title" content="Test">
-        <meta name="og:url" content="http://map0logo.github.io/posts/test.html">
-            <meta name="og:description" content="Write your post here.">
+        <meta name="og:title" content="Desplegar nikola en github">
+        <meta name="og:url" content="http://map0logo.github.io/posts/desplegar-nikola-en-github.html">
+            <meta name="og:description" content="Importante seguir las instrucciones con atención, no vale la pena intentar ser
+originales :-D.
+Para crear un despliegue de nikola en github como página principal seguir los
+siguientes pasos:
+
+Crear en">
         <meta name="og:site_name" content="map0logo">
         <meta name="og:type" content="article">
 
@@ -79,7 +84,7 @@
                 
                     
     <li>
-    <a href="test.rst" id="sourcelink">Código</a>
+    <a href="desplegar-nikola-en-github.rst" id="sourcelink">Código</a>
     </li>
 
                 
@@ -102,19 +107,19 @@
     
     <header>
         
-    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Test</a></h1>
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Desplegar nikola en github</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Francisco Palm</span></p>
-            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2014-09-01T22:16:37-05:30" itemprop="datePublished" title="Fecha de publicación">2014-09-01 22:16</time></a></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2014-09-01T22:39:11-05:30" itemprop="datePublished" title="Fecha de publicación">2014-09-01 22:39</time></a></p>
                 <p class="commentline">
         
-    <a href="test.html#disqus_thread" data-disqus-identifier="cache/posts/test.html">Comments</a>
+    <a href="desplegar-nikola-en-github.html#disqus_thread" data-disqus-identifier="cache/posts/desplegar-nikola-en-github.html">Comments</a>
 
 
             
         </p>
-<p class="sourceline"><a href="test.rst" id="sourcelink">Código</a></p>
+<p class="sourceline"><a href="desplegar-nikola-en-github.rst" id="sourcelink">Código</a></p>
 
         </div>
         
@@ -122,7 +127,69 @@
     </header>
 
     <div class="e-content entry-content" itemprop="articleBody text">
-    Write your post here.
+    <p>Importante seguir las instrucciones con atención, no vale la pena intentar ser
+originales :-D.</p>
+<p>Para crear un despliegue de nikola en github como página principal seguir los
+siguientes pasos:</p>
+<ol class="arabic simple">
+<li>Crear en tu cuenta de github un repositorio con nombre [usuario].github.io</li>
+<li>Clonar ese repositorio y crear un entorno virtual (python 3.4) para
+esa carpeta.</li>
+</ol>
+<!-- code-block::shell
+
+$ git clone https://github.com/[usuario]/[usuario].github.io.git
+$ mkvirtualenv -p /usr/bin/python3 [usuario].github.io # Necesitas tener virtualenvwrapper
+$ cd [usuario].github.io.git -->
+<ol class="arabic simple" start="3">
+<li>Crear una rama "sources" para la nueva instancia de nikola</li>
+</ol>
+<!-- code-block::shell
+
+$ touch README.md # necesitas al menos un commit
+$ git add README.md
+$ git commit REAME.md -m "Initial commit"
+$ git branch sources # la rama con los fuentes de nikola
+$ git checkout sources # ahora trabajamos sobre los fuentes -->
+<ol class="arabic simple" start="4">
+<li>En el nuevo entorno virtual y en la rama sources instalar nikola</li>
+</ol>
+<!-- code-block::shell
+
+$ pip install nikola
+$ nikola init ./ -->
+<ol class="arabic simple" start="5">
+<li>En conf.py que debe ahora estar en la raíz del repositorio, descomentar y
+editar las variables</li>
+</ol>
+<!-- code-block::python
+
+GITHUB_SOURCE_BRANCH = 'sources'
+GITHUB_DEPLOY_BRANCH = 'master' -->
+<ol class="arabic" start="6">
+<li>
+<p class="first">Finalmente añadir algo de contenido usando <tt class="docutils literal">nikola new_post</tt> o
+<tt class="docutils literal">nikola new_page</tt>, ¡ojo!, siempre en la rama <tt class="docutils literal">sources</tt></p>
+<p>Editar el post</p>
+</li>
+</ol>
+<!-- code-block::shell
+
+$ git add posts/[nuevo_post].rst
+$ git commit -a "Add [nuevo_post]"
+$ nikola github_deploy -->
+<p>Puede ser conveniente crear el correspondiente .gitignore en la raíz del
+repositorio, con más o menos el siguiente contenido</p>
+<dl class="docutils">
+<dt>::</dt>
+<dd>.idea/
+__pycache__/
+output/
+cache/
+.doit.db</dd>
+</dl>
+<p><tt class="docutils literal">.idea</tt> para proyectos de pycharm, el resto son carpetas y archivos generados
+por nikola.</p>
     </div>
     <aside class="postpromonav">
     <nav>
@@ -139,9 +206,9 @@
         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="map0logo",
-            disqus_url="http://map0logo.github.io/posts/test.html",
-        disqus_title="Test",
-        disqus_identifier="cache/posts/test.html",
+            disqus_url="http://map0logo.github.io/posts/desplegar-nikola-en-github.html",
+        disqus_title="Desplegar nikola en github",
+        disqus_identifier="cache/posts/desplegar-nikola-en-github.html",
         disqus_config = function () {
             this.language = "es_ES";
         };
