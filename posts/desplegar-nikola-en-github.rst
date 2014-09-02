@@ -1,7 +1,7 @@
 .. title: Desplegar nikola en github
 .. slug: desplegar-nikola-en-github
 .. date: 2014-09-01 22:39:11 UTC-05:30
-.. tags: 
+.. tags: nikola, github, virtualenv
 .. link: 
 .. description: 
 .. type: text

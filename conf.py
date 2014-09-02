@@ -26,7 +26,7 @@ SITE_URL = "http://map0logo.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://map0logo.github.io"
 BLOG_EMAIL = "francisco.palm@sani.org.ve"
-BLOG_DESCRIPTION = "geomancia"  # (translatable)
+BLOG_DESCRIPTION = "geomancia matemática, geomática poética"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -94,7 +94,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/archive.html", "Archivo"),
-        ("/categories/index.html", "Tags"),
+        ("/categories/index.html", "Etiquetas"),
         ("/rss.xml", "feed RSS"),
     ),
 }
@@ -477,11 +477,11 @@ COMMENT_SYSTEM_ID = "map0logo"
 # ANNOTATIONS = False
 
 # Create index.html for story folders?
-# STORY_INDEX = False
+STORY_INDEX = True
 # Enable comments on story pages?
-# COMMENTS_IN_STORIES = False
+COMMENTS_IN_STORIES = True
 # Enable comments on picture gallery pages?
-# COMMENTS_IN_GALLERIES = False
+COMMENTS_IN_GALLERIES = True
 
 # What file should be used for directory indexes?
 # Defaults to index.html
@@ -619,20 +619,20 @@ COMMENT_SYSTEM_ID = "map0logo"
 # This search form works for any site and looks good in the "site" theme where
 # it appears on the navigation bar:
 #
-# SEARCH_FORM = """
-# <!-- Custom search -->
-# <form method="get" id="search" action="//duckduckgo.com/"
-#  class="navbar-form pull-left">
-# <input type="hidden" name="sites" value="%s"/>
-# <input type="hidden" name="k8" value="#444444"/>
-# <input type="hidden" name="k9" value="#D51920"/>
-# <input type="hidden" name="kt" value="h"/>
-# <input type="text" name="q" maxlength="255"
-#  placeholder="Search&hellip;" class="span2" style="margin-top: 4px;"/>
-# <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
-# </form>
-# <!-- End of custom search -->
-# """ % SITE_URL
+SEARCH_FORM = """
+<!-- Custom search -->
+<form method="get" id="search" action="//duckduckgo.com/"
+ class="navbar-form pull-left">
+<input type="hidden" name="sites" value="%s"/>
+<input type="hidden" name="k8" value="#444444"/>
+<input type="hidden" name="k9" value="#D51920"/>
+<input type="hidden" name="kt" value="h"/>
+<input type="text" name="q" maxlength="255"
+ placeholder="Search&hellip;" class="span2" style="margin-top: 4px;"/>
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+</form>
+<!-- End of custom search -->
+""" % SITE_URL
 #
 # If you prefer a google search form, here's an example that should just work:
 # SEARCH_FORM = """
