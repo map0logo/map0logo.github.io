@@ -11,7 +11,7 @@ Mapologo
 
 twitter @mapologo
 
-.. image:: /galleries/mapologo/fpalm-junio2010_400x400.thumbnail.png
+.. image:: /images/fpalm-junio2010.png
    :alt: mapologo 2010
 
 .. code-block:: console
@@ -23,7 +23,3 @@ twitter @mapologo
 Tatuy, Venezuela
 
 http://about.me/mapologo
-
-.. image:: files/fpalm-junio2010_400x400.png
-   :scale: 50 %
-   :alt: mapologo face 4 years ago
