@@ -19,6 +19,6 @@ Tatuy, Venezuela
 
 http://about.me/mapologo
 
-.. image:: ../files/fpalm-junio2010_400x400.png
+.. image:: files/fpalm-junio2010_400x400.png
    :scale: 50 %
    :alt: mapologo face 4 years ago
