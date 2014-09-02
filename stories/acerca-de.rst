@@ -11,7 +11,7 @@ Mapologo
 
 twitter @mapologo
 
-.. image:: /galleries/mapologo/fpalm-junio2010_400x400.thumbnail.png
+.. image:: /images/fpalm-junio2010.png
    :alt: mapologo 2010
 
 .. code-block:: console
