@@ -5,19 +5,43 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
+  <loc>http://map0logo.github.io/2014/index.html</loc>
+  <lastmod>2014-09-02</lastmod>
+ </url>
+ <url>
   <loc>http://map0logo.github.io/archive.html</loc>
-  <lastmod>2014-09-01</lastmod>
+  <lastmod>2014-09-02</lastmod>
+ </url>
+ <url>
+  <loc>http://map0logo.github.io/categories/github.html</loc>
+  <lastmod>2014-09-02</lastmod>
  </url>
  <url>
   <loc>http://map0logo.github.io/categories/index.html</loc>
-  <lastmod>2014-09-01</lastmod>
+  <lastmod>2014-09-02</lastmod>
+ </url>
+ <url>
+  <loc>http://map0logo.github.io/categories/nikola.html</loc>
+  <lastmod>2014-09-02</lastmod>
+ </url>
+ <url>
+  <loc>http://map0logo.github.io/categories/virtualenv.html</loc>
+  <lastmod>2014-09-02</lastmod>
  </url>
  <url>
   <loc>http://map0logo.github.io/index.html</loc>
-  <lastmod>2014-09-01</lastmod>
+  <lastmod>2014-09-02</lastmod>
+ </url>
+ <url>
+  <loc>http://map0logo.github.io/posts/desplegar-nikola-en-github.html</loc>
+  <lastmod>2014-09-02</lastmod>
  </url>
  <url>
   <loc>http://map0logo.github.io/stories/acerca-de.html</loc>
-  <lastmod>2014-09-01</lastmod>
+  <lastmod>2014-09-02</lastmod>
+ </url>
+ <url>
+  <loc>http://map0logo.github.io/stories/index.html</loc>
+  <lastmod>2014-09-02</lastmod>
  </url>
 </urlset>

@@ -48,7 +48,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://map0logo.github.io">
+            <a class="navbar-brand" href="http://map0logo.github.io/">
 
                 <span id="blog-title">map0logo</span>
             </a>
@@ -61,7 +61,7 @@
 <a href="../archive.html">Archivo</a>
                 </li>
 <li>
-<a href="../categories/index.html">Tags</a>
+<a href="../categories/index.html">Etiquetas</a>
                 </li>
 <li>
 <a href="../rss.xml">feed RSS</a>
@@ -69,6 +69,18 @@
                 
             </li>
 </ul>
+                
+<!-- Custom search -->
+<form method="get" id="search" action="//duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://map0logo.github.io/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
 
             <ul class="nav navbar-nav navbar-right">
                 
@@ -98,8 +110,33 @@
 </nav>
 
     <h1>galleries</h1>
+    <ul>
+        <li><a href="mapologo"><i class="glyphicon
+        glyphicon-folder-open"></i> mapologo</a></li>
+    </ul>
 
 <div id="gallery_container"></div>
+
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="map0logo",
+        disqus_title="/galleries/index.html",
+        disqus_identifier="galleries",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
 
         </div>
         <!--End of body content-->

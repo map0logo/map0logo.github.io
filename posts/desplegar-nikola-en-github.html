@@ -70,7 +70,7 @@ Crear en">
 <a href="../archive.html">Archivo</a>
                 </li>
 <li>
-<a href="../categories/index.html">Tags</a>
+<a href="../categories/index.html">Etiquetas</a>
                 </li>
 <li>
 <a href="../rss.xml">feed RSS</a>
@@ -78,6 +78,18 @@ Crear en">
                 
             </li>
 </ul>
+                
+<!-- Custom search -->
+<form method="get" id="search" action="//duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://map0logo.github.io/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
 
             <ul class="nav navbar-nav navbar-right">
                 
@@ -194,6 +206,11 @@ por nikola.</p>
     <aside class="postpromonav">
     <nav>
     
+        <ul itemprop="keywords" class="tags">
+           <li><a class="tag p-category" href="../categories/github.html" rel="tag">github</a></li>
+           <li><a class="tag p-category" href="../categories/nikola.html" rel="tag">nikola</a></li>
+           <li><a class="tag p-category" href="../categories/virtualenv.html" rel="tag">virtualenv</a></li>
+        </ul>
 
     
 

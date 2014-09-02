@@ -5,11 +5,23 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://map0logo.github.io/categories/github.xml</loc>
+  <lastmod>2014-09-02</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://map0logo.github.io/categories/nikola.xml</loc>
+  <lastmod>2014-09-02</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://map0logo.github.io/categories/virtualenv.xml</loc>
+  <lastmod>2014-09-02</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://map0logo.github.io/rss.xml</loc>
-  <lastmod>2014-09-01</lastmod>
+  <lastmod>2014-09-02</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/sitemap.xml</loc>
-  <lastmod>2014-09-01</lastmod>
+  <lastmod>2014-09-02</lastmod>
  </sitemap>
 </sitemapindex>
