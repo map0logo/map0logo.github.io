@@ -24,7 +24,7 @@ BLOG_TITLE = "map0logo 地図学者"  # (translatable)
 SITE_URL = "http://map0logo.github.io/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://map0logo.github.io"
+# BASE_URL = "http://map0logo.github.io/"
 BLOG_EMAIL = "francisco.palm@sani.org.ve"
 BLOG_DESCRIPTION = "geomancia matemática, geomática poética"  # (translatable)
 
@@ -113,7 +113,7 @@ THEME = "custom01"
 # (eg. 'Europe/Zurich')
 # Also, if you want to use a different time zone in some of your posts,
 # you can use the ISO 8601/RFC 3339 format (ex. 2012-03-30T23:00:00+02:00)
-TIMEZONE = "\u221204:30"
+TIMEZONE = "America/Caracas"
 
 # If you want to use ISO 8601 (also valid RFC 3339) throughout Nikola
 # (especially in new_post), set this to True.
