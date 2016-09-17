@@ -1,6 +1,6 @@
 .. title: Acerca de
 .. slug: acerca-de
-.. date: 2014-09-01 22:25:38 UTC-05:30
+.. date: 2016-09-17 22:27:44 UTC-04:00
 .. tags: 
 .. link: 
 .. description: 
@@ -9,10 +9,8 @@
 Mapologo
 ========
 
-twitter @mapologo
-
-.. image:: /images/fpalm-junio2010.png
-   :alt: mapologo 2010
+.. image:: /images/avatar.jpg
+   :alt: mapologo 2016
 
 .. code-block:: console
 
@@ -20,6 +18,7 @@ twitter @mapologo
    $ hacktivista, Python & R, Pop & Rock Indie,
    $ Otaku & Geek, Zen & K, Utopía & Emancipación
 
-Tatuy, Venezuela
+* http://about.me/mapologo
+* twitter `@mapologo <https://twitter.com/mapologo>`_
 
-http://about.me/mapologo
+Tatuy, Venezuela

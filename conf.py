@@ -135,13 +135,13 @@ NAVIGATION_LINKS = {
         ("/archive.html", "Archivo"),
         ("/categories/", "Etiquetas"),
         ("/galleries/index.html", "Galerias"),
-        ("/stories/acerca-de.html", "Acerca de"),
+        ("/stories/acerca-de/", "Acerca de"),
         ("/rss.xml", "feed RSS"),
     ),
 }
 
 # Name of the theme to use.
-THEME = "monospace"
+THEME = "material-theme"
 
 # Primary color of your theme. This will be used to customize your theme and
 # auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
@@ -177,6 +177,7 @@ THEME_COLOR = '#5670d4'
 POSTS = (
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.ipynb", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
@@ -999,19 +1000,19 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # long time). Insert anything you want here, or even make it empty (which is
 # the default right now)
 # (translatable)
-# SOCIAL_BUTTONS_CODE = """
-# <!-- Social buttons -->
-# <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
-# <a class="addthis_button_more">Share</a>
-# <ul><li><a class="addthis_button_facebook"></a>
-# <li><a class="addthis_button_google_plusone_share"></a>
-# <li><a class="addthis_button_linkedin"></a>
-# <li><a class="addthis_button_twitter"></a>
-# </ul>
-# </div>
-# <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
-# <!-- End of social buttons -->
-# """
+SOCIAL_BUTTONS_CODE = """
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+<li><a class="addthis_button_google_plusone_share"></a>
+<li><a class="addthis_button_linkedin"></a>
+<li><a class="addthis_button_twitter"></a>
+</ul>
+</div>
+<script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+"""
 
 # Show link to source for the posts?
 # Formerly known as HIDE_SOURCELINK (inverse)
@@ -1222,7 +1223,46 @@ UNSLUGIFY_TITLES = True
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
-GLOBAL_CONTEXT = {}
+
+
+BIOGRAPHY = """
+<img class="img-circle" style="float:left;margin:10px 20px 10px 0px;max-height:200px;" src="/images/avatar.jpg">
+<p>Francisco Palm (팜 시스코) poetic geomatics, mathematical geomancy, hacktivist, Python & R, Pop & Rock Indie, Geek & Otaku, Zen & K, Massive Empowerment</p>
+"""
+
+GLOBAL_CONTEXT = {                                                
+     'header_color': 'success',
+
+    "social_links": [
+    {
+        'bgcolor': "#F44336",
+        'icon': "<i class='fa fa-share-square-o'></i>"
+    },
+    {
+        "url": "https://twitter.com/",
+        "bgcolor": "#55ACEE",
+        "color": "#fffff",
+        "icon": "<i class='fa fa-twitter'></i>",
+        "target": "_blank"
+    },
+    {
+        "url": "https://github.com/",
+        "bgcolor": "#666666",
+        "color": "#fffff",
+        "icon": "<i class='fa fa-github-square'></i>",
+        "target": "_blank"
+    },
+    {
+        "url": "https://www.facebook.com",
+        "bgcolor": "#3B5998",
+        "color": "#fffff",
+        "icon": "<i class='fa fa-facebook'></i>",
+        "target": "_blank"
+    },
+    ],
+    "biography": BIOGRAPHY,
+    'author_avatar': '/images/avatar.jpg',                                 
+}
 
 # Add functions here and they will be called with template
 # GLOBAL_CONTEXT as parameter when the template is about to be
