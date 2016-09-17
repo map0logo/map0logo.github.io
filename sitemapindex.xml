@@ -7,30 +7,30 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://map0logo.github.io/categories/github.xml</loc>
-  <lastmod>2016-09-17T19:32:00Z</lastmod>
+  <lastmod>2016-09-17T20:36:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/categories/nikola.xml</loc>
-  <lastmod>2016-09-17T19:32:00Z</lastmod>
+  <lastmod>2016-09-17T20:36:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/categories/virtualenv.xml</loc>
-  <lastmod>2016-09-17T19:32:00Z</lastmod>
+  <lastmod>2016-09-17T20:36:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/galleries/mapologo/rss.xml</loc>
-  <lastmod>2016-09-17T19:32:00Z</lastmod>
+  <lastmod>2016-09-17T22:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/galleries/rss.xml</loc>
-  <lastmod>2016-09-17T19:32:00Z</lastmod>
+  <lastmod>2016-09-17T22:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/rss.xml</loc>
-  <lastmod>2016-09-17T19:32:00Z</lastmod>
+  <lastmod>2016-09-17T22:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/sitemap.xml</loc>
-  <lastmod>2016-09-17T19:32:00Z</lastmod>
+  <lastmod>2016-09-17T22:32:00Z</lastmod>
  </sitemap>
 </sitemapindex>
