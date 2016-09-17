@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>map0logo 地図学者 (github)</title><link>http://map0logo.github.io/</link><description></description><language>es</language><lastBuildDate>Tue, 02 Sep 2014 11:06:48 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Desplegar nikola en github</title><link>http://map0logo.github.io/posts/desplegar-nikola-en-github.html</link><dc:creator>Francisco Palm</dc:creator><description>&lt;p&gt;Importante seguir las instrucciones con atención, no vale la pena intentar ser
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>map0logo 地図学者 (github)</title><link>http://map0logo.github.io/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://map0logo.github.io/categories/github.xml"></atom:link><language>es</language><lastBuildDate>Sat, 17 Sep 2016 19:32:47 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Desplegar nikola en github</title><link>http://map0logo.github.io/posts/desplegar-nikola-en-github/</link><dc:creator>Francisco Palm</dc:creator><description>&lt;div&gt;&lt;p&gt;Importante seguir las instrucciones con atención, no vale la pena intentar ser
 originales :-D.&lt;/p&gt;
 &lt;p&gt;Para crear un despliegue de nikola en github como página principal seguir los
 siguientes pasos:&lt;/p&gt;
@@ -8,48 +8,38 @@ siguientes pasos:&lt;/p&gt;
 &lt;li&gt;Clonar ese repositorio y crear un entorno virtual (python 3.4) para
 esa carpeta.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code console literal-block"&gt;
-&lt;span class="gp"&gt;$&lt;/span&gt; git clone https://github.com/&lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;/&lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io.git
-&lt;span class="gp"&gt;$&lt;/span&gt; mkvirtualenv -p /usr/bin/python3 &lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io &lt;span class="c"&gt;# Necesitas tener virtualenvwrapper
-&lt;/span&gt;&lt;span class="gp"&gt;$&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io.git
-&lt;/pre&gt;
-&lt;ol class="arabic simple" start="3"&gt;
+&lt;pre class="code console"&gt;&lt;a name="rest_code_01f8412e306043e8a868d09810c423a4-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone https://github.com/&lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;/&lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io.git
+&lt;a name="rest_code_01f8412e306043e8a868d09810c423a4-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; mkvirtualenv -p /usr/bin/python3 &lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io &lt;span class="c1"&gt;# Necesitas tener virtualenvwrapper&lt;/span&gt;
+&lt;a name="rest_code_01f8412e306043e8a868d09810c423a4-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io.git
+&lt;/pre&gt;&lt;ol class="arabic simple" start="3"&gt;
 &lt;li&gt;Crear una rama "sources" para la nueva instancia de nikola&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code console literal-block"&gt;
-&lt;span class="gp"&gt;$&lt;/span&gt; touch README.md &lt;span class="c"&gt;# necesitas al menos un commit
-&lt;/span&gt;&lt;span class="gp"&gt;$&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt; git add README.md
-&lt;span class="gp"&gt;$&lt;/span&gt; git commit REAME.md -m &lt;span class="s2"&gt;"Initial commit"&lt;/span&gt;
-&lt;span class="gp"&gt;$&lt;/span&gt; git branch sources &lt;span class="c"&gt;# la rama con los fuentes de nikola
-&lt;/span&gt;&lt;span class="gp"&gt;$&lt;/span&gt;&lt;span class="c"&gt;&lt;/span&gt; git checkout sources &lt;span class="c"&gt;# ahora trabajamos sobre los fuentes&lt;/span&gt;
-&lt;/pre&gt;
-&lt;ol class="arabic simple" start="4"&gt;
+&lt;pre class="code console"&gt;&lt;a name="rest_code_ac2bd41c474e49738197469119e9e3c8-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; touch README.md &lt;span class="c1"&gt;# necesitas al menos un commit&lt;/span&gt;
+&lt;a name="rest_code_ac2bd41c474e49738197469119e9e3c8-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git add README.md
+&lt;a name="rest_code_ac2bd41c474e49738197469119e9e3c8-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git commit REAME.md -m &lt;span class="s2"&gt;"Initial commit"&lt;/span&gt;
+&lt;a name="rest_code_ac2bd41c474e49738197469119e9e3c8-4"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git branch sources &lt;span class="c1"&gt;# la rama con los fuentes de nikola&lt;/span&gt;
+&lt;a name="rest_code_ac2bd41c474e49738197469119e9e3c8-5"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git checkout sources &lt;span class="c1"&gt;# ahora trabajamos sobre los fuentes&lt;/span&gt;
+&lt;/pre&gt;&lt;ol class="arabic simple" start="4"&gt;
 &lt;li&gt;En el nuevo entorno virtual y en la rama sources instalar nikola&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code console literal-block"&gt;
-&lt;span class="gp"&gt;$&lt;/span&gt; pip install nikola
-&lt;span class="gp"&gt;$&lt;/span&gt; nikola init ./
-&lt;/pre&gt;
-&lt;ol class="arabic simple" start="5"&gt;
+&lt;pre class="code console"&gt;&lt;a name="rest_code_30adaca7548b4e308b94f39079090dfb-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; pip install nikola
+&lt;a name="rest_code_30adaca7548b4e308b94f39079090dfb-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; nikola init ./
+&lt;/pre&gt;&lt;ol class="arabic simple" start="5"&gt;
 &lt;li&gt;En conf.py que debe ahora estar en la raíz del repositorio, descomentar y
 editar las variables&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code python literal-block"&gt;
-&lt;span class="n"&gt;GITHUB_SOURCE_BRANCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;'sources'&lt;/span&gt;
-&lt;span class="n"&gt;GITHUB_DEPLOY_BRANCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;'master'&lt;/span&gt;
-&lt;/pre&gt;
-&lt;ol class="arabic" start="6"&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_01d9238a6a114646b777e1875601ef03-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;GITHUB_SOURCE_BRANCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'sources'&lt;/span&gt;
+&lt;a name="rest_code_01d9238a6a114646b777e1875601ef03-2"&gt;&lt;/a&gt;&lt;span class="n"&gt;GITHUB_DEPLOY_BRANCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'master'&lt;/span&gt;
+&lt;/pre&gt;&lt;ol class="arabic" start="6"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Finalmente añadir algo de contenido usando &lt;tt class="docutils literal"&gt;nikola new_post&lt;/tt&gt; o
 &lt;tt class="docutils literal"&gt;nikola new_page&lt;/tt&gt;, ¡ojo!, siempre en la rama &lt;tt class="docutils literal"&gt;sources&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;Editar el post&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code console literal-block"&gt;
-&lt;span class="gp"&gt;$&lt;/span&gt; git add posts/&lt;span class="o"&gt;[&lt;/span&gt;nuevo_post&lt;span class="o"&gt;]&lt;/span&gt;.rst
-&lt;span class="gp"&gt;$&lt;/span&gt; git commit -a &lt;span class="s2"&gt;"Add [nuevo_post]"&lt;/span&gt;
-&lt;span class="gp"&gt;$&lt;/span&gt; nikola github_deploy
-&lt;/pre&gt;
-&lt;p&gt;Puede ser conveniente crear el correspondiente .gitignore en la raíz del
+&lt;pre class="code console"&gt;&lt;a name="rest_code_6938b10f443a42178cd67674ac7caa07-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git add posts/&lt;span class="o"&gt;[&lt;/span&gt;nuevo_post&lt;span class="o"&gt;]&lt;/span&gt;.rst
+&lt;a name="rest_code_6938b10f443a42178cd67674ac7caa07-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git commit -a &lt;span class="s2"&gt;"Add [nuevo_post]"&lt;/span&gt;
+&lt;a name="rest_code_6938b10f443a42178cd67674ac7caa07-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; nikola github_deploy
+&lt;/pre&gt;&lt;p&gt;Puede ser conveniente crear el correspondiente .gitignore en la raíz del
 repositorio, con más o menos el siguiente contenido&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 .idea/
@@ -59,4 +49,4 @@ cache/
 .doit.db
 &lt;/pre&gt;
 &lt;p&gt;&lt;tt class="docutils literal"&gt;.idea&lt;/tt&gt; para proyectos de pycharm, el resto son carpetas y archivos generados
-por nikola.&lt;/p&gt;</description><category>github</category><category>nikola</category><category>virtualenv</category><guid>http://map0logo.github.io/posts/desplegar-nikola-en-github.html</guid><pubDate>Tue, 02 Sep 2014 04:09:11 GMT</pubDate></item></channel></rss>
+por nikola.&lt;/p&gt;&lt;/div&gt;</description><category>github</category><category>nikola</category><category>virtualenv</category><guid>http://map0logo.github.io/posts/desplegar-nikola-en-github/</guid><pubDate>Tue, 02 Sep 2014 04:09:11 GMT</pubDate></item></channel></rss>

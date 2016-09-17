@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://map0logo.github.io/categories/github.xml</loc>
-  <lastmod>2014-09-02</lastmod>
+  <lastmod>2016-09-17T19:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/categories/nikola.xml</loc>
-  <lastmod>2014-09-02</lastmod>
+  <lastmod>2016-09-17T19:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/categories/virtualenv.xml</loc>
-  <lastmod>2014-09-02</lastmod>
+  <lastmod>2016-09-17T19:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/galleries/mapologo/rss.xml</loc>
-  <lastmod>2014-09-02</lastmod>
+  <lastmod>2016-09-17T19:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/galleries/rss.xml</loc>
-  <lastmod>2014-09-02</lastmod>
+  <lastmod>2016-09-17T19:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/rss.xml</loc>
-  <lastmod>2014-09-02</lastmod>
+  <lastmod>2016-09-17T19:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://map0logo.github.io/sitemap.xml</loc>
-  <lastmod>2014-09-02</lastmod>
+  <lastmod>2016-09-17T19:32:00Z</lastmod>
  </sitemap>
 </sitemapindex>
