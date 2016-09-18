@@ -18,7 +18,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Francisco Palm"  # (translatable)
-BLOG_TITLE = "ϻåƥøĿȯğọ</br>地図学者"  # (translatable)
+BLOG_TITLE = "<br>ϻåƥøĿȯğọ<br>地図学者"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "http://map0logo.github.io/"
