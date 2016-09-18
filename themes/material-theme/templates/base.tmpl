@@ -17,9 +17,6 @@
     <div class="container-fluid">
         <div class="row">
           <div class="col-xs-3">
-                {% if search_form %}
-                    {{ search_form }}
-                {% endif %}
             <h1 class="title-blog">
                 <a  href="{{ abs_link(_link("root", None, lang)) }}">
                     {% if logo_url %}
@@ -42,8 +39,10 @@
                     {{ base.html_navigation_links() }}
                     {{ template_hooks['menu']() }}
                 </ul>
-
                 <ul class="nav navbar-nav">
+                  {% if search_form %}
+                      {{ search_form }}
+                  {% endif %}
                     {% block belowtitle %}
                     {% if translations|length > 1 %}
                         <li>{{ base.html_translations() }}</li>
@@ -76,7 +75,7 @@
                 <hr />
                 {% else %}
                 <h4 class="modal-title">{{ blog_title }} credits</h4>
-                {% endif %} 
+                {% endif %}
               </div>
               <div class="modal-body">
                     {{ content_footer }}
