@@ -91,13 +91,14 @@ MathJax.Hub.Config({
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Agentes-en-Python">Agentes en Python<a class="anchor-link" href="posts/agentes-en-python/#Agentes-en-Python">¶</a>
 </h2>
-<p>El recién creado grupo de Telegram <a href="https://telegram.me/PyDataVE">https://telegram.me/PyDataVE</a> se creó a partir del interés en el tema de inteligencia artificial.  Desde el punto de vista del libro mas utilizado en el planeta para la enseñanza de Inteligencia Artificial "Artificial Intelligence: A Modern Approach" (AIMA) de Russell y Norvig <a href="http://aima.cs.berkeley.edu/">http://aima.cs.berkeley.edu/</a> quizás el concepto más básico es el de <em>agente</em>.</p>
+<p>El recién creado grupo de Telegram <a href="https://telegram.me/PyDataVE">https://telegram.me/PyDataVE</a> se creó a partir del interés en el tema de inteligencia artificial, aunque es afín a la misión de la comunidad <a href="https://pydata.org">PyData</a> de ofrecer un espacio de intercambio alrededor de la Ciencia de Datos.</p>
+<p>Desde el punto de vista del libro mas utilizado en el planeta para la enseñanza de Inteligencia Artificial "Artificial Intelligence: A Modern Approach" (AIMA) de Russell y Norvig <a href="http://aima.cs.berkeley.edu/">http://aima.cs.berkeley.edu/</a> quizás el concepto más básico es el de <em>agente</em>.</p>
 <p>En este libro se definen los agentes como:</p>
 <blockquote>
 <p>Un agente es cualquier cosa capaz de percibir su <strong>entorno</strong> a través de <strong>sensores</strong> (que reciben perceptos) y realizar acciones sobre este entorno mediante <strong>actuadores</strong>.
 El comportamiento del agente viene dado por la <strong>función del agente</strong> que proyecta una secuencia de <strong>perceptos</strong> en una <strong>acción</strong>.</p>
 </blockquote>
-<p>Precisamente esta función del agente $f : P^\ast \rightarrow A$ es la representación de la inteligencia, lo que puede permitir al agente comportarse de un modo <em>racional</em> (o no). Es decir, busca alcanzar el mejor resultado de acuerdo a una <strong>medida de rendimiento</strong>.</p>
+<p>Precisamente esta función del agente $f : P^\ast \rightarrow A$ es la representación de la inteligencia, lo que puede permitir al agente comportarse de un modo <em>racional</em> (o no). Es decir, intentar alcanzar el mejor resultado de acuerdo a una <strong>medida de rendimiento</strong>.</p>
 
 </div>
 </div>
@@ -203,9 +204,10 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Así, mediante herencia se establece que un agente es un tipo de cosa que está viva <code>self.alive = True</code> y que no es un simple obstáculo <code>self.bump = False</code>. El agente puede recolectar cosas mediante <code>can_grab(thing)</code> y almacena en <code>self.holding = []</code>, y tiene una medida de rendimiento interna <code>self. performance</code>.</p>
+<p>Así, mediante herencia se establece que un agente es un tipo de cosa que está viva <code>self.alive = True</code> y que no es un simple obstáculo <code>self.bump = False</code>. El agente puede recolectar cosas mediante <code>can_grab(thing)</code> y las almacenaría en <code>self.holding = []</code>, y tiene una medida de rendimiento interna <code>self. performance</code>.</p>
 <p>Finalmente, contiene la colección descrita en <code>program</code> que recibe perceptos y devuelve acciones.</p>
-<p>Ambas son definiciones abstractas que se utilizan en los ejemplos que están en el mismo repositorios y que se revisarán con detenimiento en otros artículos.</p>
+<p>Ambas son definiciones abstractas que se utilizan en los ejemplos que están en el mismo repositorio
+y que se revisarán con detenimiento en otros artículos.</p>
 
 </div>
 </div>
@@ -217,7 +219,7 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Modelo-de-Schelling">Modelo de Schelling<a class="anchor-link" href="posts/agentes-en-python/#Modelo-de-Schelling">¶</a>
 </h3>
-<p>Un ejemplo clásico de simulación de agentes es el Modelo Dinámico de Segregación de Thomas Schelling de 1971 "Dynamic Models of Segregation" [Journal of Mathematical Sociology. 1 (2): 143–186. doi:10.1080/0022250x.1971.9989794], en el que se representa una simulación de segregación racial en la que a partir de una definición simple del comportamiento individual de los agentes es posible observar como emergen comportamientos colectivos. Estas ideas luego son generalizadas en su libro seminal de 1978 "Micromotives and Macrobehavior" <a href="http://books.wwnorton.com/books/978-0-393-32946-9/">http://books.wwnorton.com/books/978-0-393-32946-9/</a>. Vale la pena señalar que Thomas Schelling fue ganador del Premio Nobel de Economía en el 2005.</p>
+<p>Un ejemplo clásico de simulación de agentes es el Modelo Dinámico de Segregación de Thomas Schelling descrito en el artículo de 1971 "Dynamic Models of Segregation" [Journal of Mathematical Sociology. 1 (2): 143–186. doi:10.1080/0022250x.1971.9989794], donde se representa una simulación de segregación racial en la que a partir de una definición simple del comportamiento individual de los agentes es posible observar como emergen comportamientos colectivos. Estas ideas luego son generalizadas en su libro seminal de 1978 "Micromotives and Macrobehavior" <a href="http://books.wwnorton.com/books/978-0-393-32946-9/">http://books.wwnorton.com/books/978-0-393-32946-9/</a>. Vale la pena señalar que Thomas Schelling fue ganador del Premio Nobel de Economía en el 2005.</p>
 <p>El modelo de Schelling del mundo es una malla; cada celda representa una casa. Las casas están ocupadas por dos clases de personas, con la etiqueta de color rojo y azul, en aproximadamente el mismo número. Una pequeña proporción de las casas están vacías. En cualquier momento, un agente puede ser feliz o infeliz, dependiendo de los otros agentes en el vecindario. La vecindad de cada casa es el conjunto de ocho células adyacentes. En una versión del modelo, los agentes son felices si tienen al menos dos vecinos de su mismo tipo, e infeliz si tienen uno o cero.</p>
 <p>La simulación pasa por la elección de un agente al azar y la comprobación para ver si es feliz. Si es así, no pasa nada; si no, el agente elige una de las celdas desocupadas al azar y se muda.</p>
 <p>Se mostrarán a continuación dos definiciones de agentes utilizadas para simular el modelo de Schelling como ejemplos concretos y alternativos de implantación de agentes.</p>
@@ -264,7 +266,7 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En este caso se representa como una entidad con una identificación única <code>unique_id</code>, que está asociado a un modelo <code>model</code>, y realiza pasos <code>steps()</code>.</p>
+<p>En este caso se representa como una entidad con una identificación única <code>unique_id</code>, el agente está asociado a un modelo <code>model</code>, y ejecuta pasos <code>step()</code>. La función <code>step()</code> no se refiere en este caso a las acciones que realiza el agente en un paso de la simulación, y no tanto al movimiento del agente.</p>
 <p>A partir de está definición se define un agente para el modelo de Schelling <a href="https://github.com/projectmesa/mesa/blob/master/examples/Schelling/model.py">https://github.com/projectmesa/mesa/blob/master/examples/Schelling/model.py</a>:</p>
 
 </div>
@@ -314,7 +316,7 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nótese que en este caso el comportamiento <em>reactivo</em> del agente se especifica en el método <code>step()</code>, en cada paso de la simulación el agente verifica el número de vecinos <code>model.grid.neighbor_iter(self.pos)</code> de su mismo tipo y no satisface la tolerancia del modelo <code>model.homophily</code> el agente se mueve a una celda vacía.</p>
+<p>Nótese que en este caso el comportamiento <em>reactivo</em> del agente se especifica en el método <code>step()</code>, en cada paso de la simulación el agente verifica el número de vecinos <code>model.grid.neighbor_iter(self.pos)</code> de su mismo tipo y si no satisface la tolerancia del modelo <code>model.homophily</code> (que expresa la necesidad de estar rodeado de agentes del mismo tipo) el agente se mueve a una celda vacía.</p>
 <p>El modelo hace referencia al <em>entorno</em> mencionado arriba, y la cantidad de vecinos y su tipo son perceptos que adquiere mediante un proceso sensorial implícito, esta información la convierte en la decisión de realizar la acción de mudarse o quedarse en el mismo lugar.</p>
 
 </div>
@@ -391,7 +393,8 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Fíjense que en este caso se añaden detalles adicionales del estado del agente: edad <code>age</code> y localización <code>loc</code> (coordenadas de su posición en la malla). Aparte de su metabolismo <code>metabolism</code> (esto es, la velocidad con la que consume energía), su alcance visual <code>vision</code>, la duración de su vida <code>lifespan</code>, y la cantidad de azúcar <code>sugar</code> que contiene, como una medida genérica de energía. Los agentes que superan su límite de vida y se quedan sin azúzar son eliminados.</p>
-<p><code>vision</code> es un parámetro que determina el proceso sensorial con el que percibe el entorno a partir de su posición actual <code>env.look_around(self.loc, self.vision)</code>, y en esta función es donde se toma la decisión hacia donde moverse En esta versión del modelo se mueve hacia la celda vacía dentro de su campo visual con la mayor cantidad de azúcar.</p>
+<p>Esta es una variante de los modelos de Schelling denominado <a href="https://en.wikipedia.org/wiki/Sugarscape">Sugarscape</a> desarrollado por Epstein y Axtell en la que se estudia como los agentes son atraídos por fuentes de energía. No deja de ser curioso como estos modelos estudian el comportamiento económico colectivo haciendo una clara analogía con las hormigas.</p>
+<p>En este caso, <code>vision</code> es un parámetro que determina el proceso sensorial con el que percibe el entorno a partir de su posición actual <code>env.look_around(self.loc, self.vision)</code>, y en esta función es donde se toma la decisión hacia donde moverse En esta versión del modelo se mueve hacia la celda vacía dentro de su campo visual con la mayor cantidad de azúcar.</p>
 
 </div>
 </div>
@@ -401,23 +404,10 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Estos dos últimos ejemplos de agentes sirven como demostraciones de casos concretos, en este caso agentes reactivos con un comportamiento muy simple. Ya sea la felicidad o el nivel de azúcar son medidas de rendimiento que determinan el comportamiento de los agentes.</p>
+<p>Estos dos últimos ejemplos de agentes sirven como demostraciones de casos concretos, son agentes reactivos con patrones de comportamiento muy simple. Ya sea la felicidad o el nivel de azúcar son medidas de rendimiento que determinan el comportamiento de los agentes.</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
@@ -571,29 +561,29 @@ Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.
 <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script>
                 var links = [
                         {
-                            "bgcolor": "#F44336",
                             "icon": "<i class='fa fa-share-square-o'></i>",
+                            "bgcolor": "#F44336",
                         },
                         {
-                            "url": "https://twitter.com/mapologo",
-                            "color": "#fffff",
-                            "bgcolor": "#55ACEE",
                             "icon": "<i class='fa fa-twitter'></i>",
+                            "color": "#fffff",
                             "target": "_blank",
+                            "bgcolor": "#55ACEE",
+                            "url": "https://twitter.com/mapologo",
                         },
                         {
-                            "url": "https://github.com/map0logo",
-                            "color": "#fffff",
-                            "bgcolor": "#666666",
                             "icon": "<i class='fa fa-github-square'></i>",
+                            "color": "#fffff",
                             "target": "_blank",
+                            "bgcolor": "#666666",
+                            "url": "https://github.com/map0logo",
                         },
                         {
-                            "url": "https://www.facebook.com/mapologo",
-                            "color": "#fffff",
-                            "bgcolor": "#3B5998",
                             "icon": "<i class='fa fa-facebook'></i>",
+                            "color": "#fffff",
                             "target": "_blank",
+                            "bgcolor": "#3B5998",
+                            "url": "https://www.facebook.com/mapologo",
                         },
                 ];
 
