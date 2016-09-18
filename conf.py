@@ -25,7 +25,7 @@ SITE_URL = "http://map0logo.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://map0logo.github.io/"
-BLOG_EMAIL = "francisco.palm@sani.org.ve"
+BLOG_EMAIL = "francisco.palm@gmail.com"
 BLOG_DESCRIPTION = "geomancia matemática, geomática poética"  # (translatable)
 
 # Nikola is multilingual!
@@ -778,7 +778,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # vs
 # xcode
 # This list MAY be incomplete since pygments adds styles every now and then.
-# CODE_COLOR_SCHEME = 'default'
+CODE_COLOR_SCHEME = 'monokai'
 
 # If you use 'site-reveal' theme you can select several subthemes
 # THEME_REVEAL_CONFIG_SUBTHEME = 'sky'
@@ -1069,20 +1069,20 @@ SOCIAL_BUTTONS_CODE = """
 # This search form works for any site and looks good in the "site" theme where
 # it appears on the navigation bar:
 #
-# SEARCH_FORM = """
-# <!-- DuckDuckGo custom search -->
-# <form method="get" id="search" action="https://duckduckgo.com/"
-#  class="navbar-form pull-left">
-# <input type="hidden" name="sites" value="%s">
-# <input type="hidden" name="k8" value="#444444">
-# <input type="hidden" name="k9" value="#D51920">
-# <input type="hidden" name="kt" value="h">
-# <input type="text" name="q" maxlength="255"
-#  placeholder="Search&hellip;" class="span2" style="margin-top: 4px;">
-# <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
-# </form>
-# <!-- End of custom search -->
-# """ % SITE_URL
+SEARCH_FORM = """
+<!-- DuckDuckGo custom search -->
+<form method="get" id="search" action="https://duckduckgo.com/"
+ class="navbar-form pull-left">
+<input type="hidden" name="sites" value="%s">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255"
+ placeholder="Search&hellip;" class="span2" style="margin-top: 4px;">
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+""" % SITE_URL
 #
 # If you prefer a Google search form, here's an example that should just work:
 # SEARCH_FORM = """
@@ -1172,7 +1172,7 @@ UNSLUGIFY_TITLES = True
 # If webassets is installed, bundle JS and CSS into single files to make
 # site loading faster in a HTTP/1.1 environment but is not recommended for
 # HTTP/2.0 when caching is used. Defaults to True.
-# USE_BUNDLES = True
+USE_BUNDLES = False
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
