@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>map0logo 地図学者</title><link>http://map0logo.github.io/</link><description>geomancia matemática, geomática poética</description><atom:link rel="self" type="application/rss+xml" href="http://map0logo.github.io/rss.xml"></atom:link><language>es</language><lastBuildDate>Sun, 18 Sep 2016 06:07:34 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Implementación de Agentes en Python</title><link>http://map0logo.github.io/posts/implementacion-de-agentes-en-python/</link><dc:creator>Francisco Palm</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>map0logo 地図学者</title><link>http://map0logo.github.io/</link><description>geomancia matemática, geomática poética</description><atom:link rel="self" href="http://map0logo.github.io/rss.xml" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Sun, 18 Sep 2016 07:04:20 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Agentes en Python</title><link>http://map0logo.github.io/posts/agentes-en-python/</link><dc:creator>Francisco Palm</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
@@ -7,7 +7,7 @@
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Agentes-en-Python"&gt;Agentes en Python&lt;a class="anchor-link" href="http://map0logo.github.io/posts/implementacion-de-agentes-en-python/#Agentes-en-Python"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;El recién creado grupo de Telegram &lt;a href="https://telegram.me/PyDataVE"&gt;https://telegram.me/PyDataVE&lt;/a&gt; se creó a partir del interés en el tema de inteligencia artificial.  Desde el punto de vista del libro mas utilizado en el planeta para la enseñanza de Inteligencia Artificial "Artificial Intelligence: A Modern Approach" (AIMA) de Russell y Norvig &lt;a href="http://aima.cs.berkeley.edu/"&gt;http://aima.cs.berkeley.edu/&lt;/a&gt; quizás el concepto más básico es el de &lt;em&gt;agente&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="Agentes-en-Python"&gt;Agentes en Python&lt;a class="anchor-link" href="http://map0logo.github.io/posts/agentes-en-python/#Agentes-en-Python"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;El recién creado grupo de Telegram &lt;a href="https://telegram.me/PyDataVE"&gt;https://telegram.me/PyDataVE&lt;/a&gt; se creó a partir del interés en el tema de inteligencia artificial.  Desde el punto de vista del libro mas utilizado en el planeta para la enseñanza de Inteligencia Artificial "Artificial Intelligence: A Modern Approach" (AIMA) de Russell y Norvig &lt;a href="http://aima.cs.berkeley.edu/"&gt;http://aima.cs.berkeley.edu/&lt;/a&gt; quizás el concepto más básico es el de &lt;em&gt;agente&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;En este libro se definen los agentes como:&lt;/p&gt;
 &lt;blockquote&gt;&lt;p&gt;Un agente es cualquier cosa capaz de percibir su &lt;strong&gt;entorno&lt;/strong&gt; a través de &lt;strong&gt;sensores&lt;/strong&gt; (que reciben perceptos) y realizar acciones sobre este entorno mediante &lt;strong&gt;actuadores&lt;/strong&gt;.
 El comportamiento del agente viene dado por la &lt;strong&gt;función del agente&lt;/strong&gt; que proyecta una secuencia de &lt;strong&gt;perceptos&lt;/strong&gt; en una &lt;strong&gt;acción&lt;/strong&gt;.&lt;/p&gt;
@@ -22,7 +22,7 @@ El comportamiento del agente viene dado por la &lt;strong&gt;función del agente
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="aima-python"&gt;aima-python&lt;a class="anchor-link" href="http://map0logo.github.io/posts/implementacion-de-agentes-en-python/#aima-python"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;En el repositorio "oficial" de python del libro AIMA &lt;a href="https://github.com/aimacode/aima-python/blob/master/agents.py"&gt;https://github.com/aimacode/aima-python/blob/master/agents.py&lt;/a&gt; codifican del siguiente modo a los agentes. Dado que los agentes son un tipo de cosas con sensores y actuadores, empiezan por definir &lt;em&gt;cosa&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id="aima-python"&gt;aima-python&lt;a class="anchor-link" href="http://map0logo.github.io/posts/agentes-en-python/#aima-python"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;En el repositorio "oficial" de python del libro AIMA &lt;a href="https://github.com/aimacode/aima-python/blob/master/agents.py"&gt;https://github.com/aimacode/aima-python/blob/master/agents.py&lt;/a&gt; codifican del siguiente modo a los agentes. Dado que los agentes son un tipo de cosas con sensores y actuadores, empiezan por definir &lt;em&gt;cosa&lt;/em&gt;.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -128,7 +128,7 @@ El comportamiento del agente viene dado por la &lt;strong&gt;función del agente
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h3 id="Modelo-de-Schelling"&gt;Modelo de Schelling&lt;a class="anchor-link" href="http://map0logo.github.io/posts/implementacion-de-agentes-en-python/#Modelo-de-Schelling"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Un ejemplo clásico de simulación de agentes es el Modelo Dinámico de Segregación de Thomas Schelling de 1971 "Dynamic Models of Segregation" [Journal of Mathematical Sociology. 1 (2): 143–186. doi:10.1080/0022250x.1971.9989794], en el que se representa una simulación de segregación racial en la que a partir de una definición simple del comportamiento individual de los agentes es posible observar como emergen comportamientos colectivos. Estas ideas luego son generalizadas en su libro seminal de 1978 "Micromotives and Macrobehavior" &lt;a href="http://books.wwnorton.com/books/978-0-393-32946-9/"&gt;http://books.wwnorton.com/books/978-0-393-32946-9/&lt;/a&gt;. Vale la pena señalar que Thomas Schelling fue ganador del Premio Nobel de Economía en el 2005.&lt;/p&gt;
+&lt;h3 id="Modelo-de-Schelling"&gt;Modelo de Schelling&lt;a class="anchor-link" href="http://map0logo.github.io/posts/agentes-en-python/#Modelo-de-Schelling"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Un ejemplo clásico de simulación de agentes es el Modelo Dinámico de Segregación de Thomas Schelling de 1971 "Dynamic Models of Segregation" [Journal of Mathematical Sociology. 1 (2): 143–186. doi:10.1080/0022250x.1971.9989794], en el que se representa una simulación de segregación racial en la que a partir de una definición simple del comportamiento individual de los agentes es posible observar como emergen comportamientos colectivos. Estas ideas luego son generalizadas en su libro seminal de 1978 "Micromotives and Macrobehavior" &lt;a href="http://books.wwnorton.com/books/978-0-393-32946-9/"&gt;http://books.wwnorton.com/books/978-0-393-32946-9/&lt;/a&gt;. Vale la pena señalar que Thomas Schelling fue ganador del Premio Nobel de Economía en el 2005.&lt;/p&gt;
 &lt;p&gt;El modelo de Schelling del mundo es una malla; cada celda representa una casa. Las casas están ocupadas por dos clases de personas, con la etiqueta de color rojo y azul, en aproximadamente el mismo número. Una pequeña proporción de las casas están vacías. En cualquier momento, un agente puede ser feliz o infeliz, dependiendo de los otros agentes en el vecindario. La vecindad de cada casa es el conjunto de ocho células adyacentes. En una versión del modelo, los agentes son felices si tienen al menos dos vecinos de su mismo tipo, e infeliz si tienen uno o cero.&lt;/p&gt;
 &lt;p&gt;La simulación pasa por la elección de un agente al azar y la comprobación para ver si es feliz. Si es así, no pasa nada; si no, el agente elige una de las celdas desocupadas al azar y se muda.&lt;/p&gt;
 &lt;p&gt;Se mostrarán a continuación dos definiciones de agentes utilizadas para simular el modelo de Schelling como ejemplos concretos y alternativos de implantación de agentes.&lt;/p&gt;
@@ -141,7 +141,7 @@ El comportamiento del agente viene dado por la &lt;strong&gt;función del agente
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="Mesa"&gt;Mesa&lt;a class="anchor-link" href="http://map0logo.github.io/posts/implementacion-de-agentes-en-python/#Mesa"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Mesa &lt;a href="https://github.com/projectmesa/mesa"&gt;https://github.com/projectmesa/mesa&lt;/a&gt; es un framework en Python para el desarrollo de simulaciones basadas en agentes que espera convertirse en una alternativa de las bibliotecas mas utilizadas en simulación multiagente que están desarrolladas en Java. La representación abstracta de un agente en Mesa es muy simple:&lt;/p&gt;
+&lt;h4 id="Mesa"&gt;Mesa&lt;a class="anchor-link" href="http://map0logo.github.io/posts/agentes-en-python/#Mesa"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Mesa &lt;a href="https://github.com/projectmesa/mesa"&gt;https://github.com/projectmesa/mesa&lt;/a&gt; es un framework en Python para el desarrollo de simulaciones basadas en agentes que espera convertirse en una alternativa de las bibliotecas mas utilizadas en simulación multiagente que están desarrolladas en Java. La representación abstracta de un agente en Mesa es muy simple:&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -234,7 +234,7 @@ El comportamiento del agente viene dado por la &lt;strong&gt;función del agente
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="Think-Complexity"&gt;Think Complexity&lt;a class="anchor-link" href="http://map0logo.github.io/posts/implementacion-de-agentes-en-python/#Think-Complexity"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Finalmente revisemos la implementación de un agente que hace Allen Downey para este mismo modelo en la 2da Edición de su libro "Think Complexity" &lt;a href="https://github.com/AllenDowney/ThinkComplexity2/blob/master/code/chap09.ipynb"&gt;https://github.com/AllenDowney/ThinkComplexity2/blob/master/code/chap09.ipynb&lt;/a&gt;:&lt;/p&gt;
+&lt;h4 id="Think-Complexity"&gt;Think Complexity&lt;a class="anchor-link" href="http://map0logo.github.io/posts/agentes-en-python/#Think-Complexity"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Finalmente revisemos la implementación de un agente que hace Allen Downey para este mismo modelo en la 2da Edición de su libro "Think Complexity" &lt;a href="https://github.com/AllenDowney/ThinkComplexity2/blob/master/code/chap09.ipynb"&gt;https://github.com/AllenDowney/ThinkComplexity2/blob/master/code/chap09.ipynb&lt;/a&gt;:&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -328,7 +328,7 @@ El comportamiento del agente viene dado por la &lt;strong&gt;función del agente
 &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-</description><guid>http://map0logo.github.io/posts/implementacion-de-agentes-en-python/</guid><pubDate>Sun, 18 Sep 2016 03:26:50 GMT</pubDate></item><item><title>Desplegar nikola en github</title><link>http://map0logo.github.io/posts/desplegar-nikola-en-github/</link><dc:creator>Francisco Palm</dc:creator><description>&lt;div&gt;&lt;p&gt;Importante seguir las instrucciones con atención, no vale la pena intentar ser
+</description><guid>http://map0logo.github.io/posts/agentes-en-python/</guid><pubDate>Sun, 18 Sep 2016 03:26:50 GMT</pubDate></item><item><title>Desplegar nikola en github</title><link>http://map0logo.github.io/posts/desplegar-nikola-en-github/</link><dc:creator>Francisco Palm</dc:creator><description>&lt;div&gt;&lt;p&gt;Importante seguir las instrucciones con atención, no vale la pena intentar ser
 originales :-D.&lt;/p&gt;
 &lt;p&gt;Para crear un despliegue de nikola en github como página principal seguir los
 siguientes pasos:&lt;/p&gt;
@@ -337,37 +337,37 @@ siguientes pasos:&lt;/p&gt;
 &lt;li&gt;Clonar ese repositorio y crear un entorno virtual (python 3.4) para
 esa carpeta.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_b152fe1540c94a79b585b4fe9df7dc01-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone https://github.com/&lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;/&lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io.git
-&lt;a name="rest_code_b152fe1540c94a79b585b4fe9df7dc01-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; mkvirtualenv -p /usr/bin/python3 &lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io &lt;span class="c1"&gt;# Necesitas tener virtualenvwrapper&lt;/span&gt;
-&lt;a name="rest_code_b152fe1540c94a79b585b4fe9df7dc01-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io.git
+&lt;pre class="code console"&gt;&lt;a name="rest_code_0537e841a9414629bf31914b14097c4c-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone https://github.com/&lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;/&lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io.git
+&lt;a name="rest_code_0537e841a9414629bf31914b14097c4c-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; mkvirtualenv -p /usr/bin/python3 &lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io &lt;span class="c1"&gt;# Necesitas tener virtualenvwrapper&lt;/span&gt;
+&lt;a name="rest_code_0537e841a9414629bf31914b14097c4c-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;usuario&lt;span class="o"&gt;]&lt;/span&gt;.github.io.git
 &lt;/pre&gt;&lt;ol class="arabic simple" start="3"&gt;
 &lt;li&gt;Crear una rama "sources" para la nueva instancia de nikola&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_492b8f3d026c47efbc056b4b00c11508-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; touch README.md &lt;span class="c1"&gt;# necesitas al menos un commit&lt;/span&gt;
-&lt;a name="rest_code_492b8f3d026c47efbc056b4b00c11508-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git add README.md
-&lt;a name="rest_code_492b8f3d026c47efbc056b4b00c11508-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git commit REAME.md -m &lt;span class="s2"&gt;"Initial commit"&lt;/span&gt;
-&lt;a name="rest_code_492b8f3d026c47efbc056b4b00c11508-4"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git branch sources &lt;span class="c1"&gt;# la rama con los fuentes de nikola&lt;/span&gt;
-&lt;a name="rest_code_492b8f3d026c47efbc056b4b00c11508-5"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git checkout sources &lt;span class="c1"&gt;# ahora trabajamos sobre los fuentes&lt;/span&gt;
+&lt;pre class="code console"&gt;&lt;a name="rest_code_3fdf6f940d5e425a8e06a58bc8d4a025-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; touch README.md &lt;span class="c1"&gt;# necesitas al menos un commit&lt;/span&gt;
+&lt;a name="rest_code_3fdf6f940d5e425a8e06a58bc8d4a025-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git add README.md
+&lt;a name="rest_code_3fdf6f940d5e425a8e06a58bc8d4a025-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git commit REAME.md -m &lt;span class="s2"&gt;"Initial commit"&lt;/span&gt;
+&lt;a name="rest_code_3fdf6f940d5e425a8e06a58bc8d4a025-4"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git branch sources &lt;span class="c1"&gt;# la rama con los fuentes de nikola&lt;/span&gt;
+&lt;a name="rest_code_3fdf6f940d5e425a8e06a58bc8d4a025-5"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git checkout sources &lt;span class="c1"&gt;# ahora trabajamos sobre los fuentes&lt;/span&gt;
 &lt;/pre&gt;&lt;ol class="arabic simple" start="4"&gt;
 &lt;li&gt;En el nuevo entorno virtual y en la rama sources instalar nikola&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_b49c19628006495eb25991c1c091a541-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; pip install nikola
-&lt;a name="rest_code_b49c19628006495eb25991c1c091a541-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; nikola init ./
+&lt;pre class="code console"&gt;&lt;a name="rest_code_65d97568d0254c3485344c580025f174-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; pip install nikola
+&lt;a name="rest_code_65d97568d0254c3485344c580025f174-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; nikola init ./
 &lt;/pre&gt;&lt;ol class="arabic simple" start="5"&gt;
 &lt;li&gt;En conf.py que debe ahora estar en la raíz del repositorio, descomentar y
 editar las variables&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_7a70b2191ae04cef95683364c8cc65f5-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;GITHUB_SOURCE_BRANCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'sources'&lt;/span&gt;
-&lt;a name="rest_code_7a70b2191ae04cef95683364c8cc65f5-2"&gt;&lt;/a&gt;&lt;span class="n"&gt;GITHUB_DEPLOY_BRANCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'master'&lt;/span&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_e5ea4d2d065a4cab8db44291a652076b-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;GITHUB_SOURCE_BRANCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'sources'&lt;/span&gt;
+&lt;a name="rest_code_e5ea4d2d065a4cab8db44291a652076b-2"&gt;&lt;/a&gt;&lt;span class="n"&gt;GITHUB_DEPLOY_BRANCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'master'&lt;/span&gt;
 &lt;/pre&gt;&lt;ol class="arabic" start="6"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Finalmente añadir algo de contenido usando &lt;tt class="docutils literal"&gt;nikola new_post&lt;/tt&gt; o
 &lt;tt class="docutils literal"&gt;nikola new_page&lt;/tt&gt;, ¡ojo!, siempre en la rama &lt;tt class="docutils literal"&gt;sources&lt;/tt&gt;&lt;/p&gt;
 &lt;p&gt;Editar el post&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_64953423470f44e6aacead91a88caa8c-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git add posts/&lt;span class="o"&gt;[&lt;/span&gt;nuevo_post&lt;span class="o"&gt;]&lt;/span&gt;.rst
-&lt;a name="rest_code_64953423470f44e6aacead91a88caa8c-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git commit -a &lt;span class="s2"&gt;"Add [nuevo_post]"&lt;/span&gt;
-&lt;a name="rest_code_64953423470f44e6aacead91a88caa8c-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; nikola github_deploy
+&lt;pre class="code console"&gt;&lt;a name="rest_code_49a489abd18942deb689e8e3425b1eb7-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git add posts/&lt;span class="o"&gt;[&lt;/span&gt;nuevo_post&lt;span class="o"&gt;]&lt;/span&gt;.rst
+&lt;a name="rest_code_49a489abd18942deb689e8e3425b1eb7-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git commit -a &lt;span class="s2"&gt;"Add [nuevo_post]"&lt;/span&gt;
+&lt;a name="rest_code_49a489abd18942deb689e8e3425b1eb7-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; nikola github_deploy
 &lt;/pre&gt;&lt;p&gt;Puede ser conveniente crear el correspondiente .gitignore en la raíz del
 repositorio, con más o menos el siguiente contenido&lt;/p&gt;
 &lt;pre class="literal-block"&gt;

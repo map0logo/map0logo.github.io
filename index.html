@@ -8,7 +8,16 @@ article: http://ogp.me/ns/article#
 <meta name="description" content="geomancia matemática, geomática poética">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>map0logo 地図学者 | map0logo 地図学者</title>
-<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="assets/css/roboto.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/material.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/ripples.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/kc.fab.css" rel="stylesheet" type="text/css">
+<link href="assets/css/theme.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://map0logo.github.io/">
 <script type="text/x-mathjax-config">
@@ -26,7 +35,7 @@ MathJax.Hub.Config({
 </script><!--[if lt IE 9]>
             <script src="assets/js/html5shiv.min.js"></script>
             <script src="assets/js/respond.min.js"></script>
-        <![endif]--><link rel="prefetch" href="posts/implementacion-de-agentes-en-python/" type="text/html">
+        <![endif]--><link rel="prefetch" href="posts/agentes-en-python/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
@@ -36,6 +45,13 @@ MathJax.Hub.Config({
 <nav class="navbar navbar-success header-panel shadow-z-3" role="navigation"><div class="container-fluid">
         <div class="row">
           <div class="col-xs-3">
+                    
+<!-- DuckDuckGo custom search -->
+<form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://map0logo.github.io/"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
             <h1 class="title-blog">
                 <a href="http://map0logo.github.io/">
                         <img src="images/mapologo.png" alt="map0logo 地図学者" id="logo"><span id="blog-title">map0logo 地図学者</span>
@@ -60,15 +76,15 @@ MathJax.Hub.Config({
                 <div class="col-xs-12 col-md-11 content-material">
 
     <div class="postindex well post-material ">
-        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/implementacion-de-agentes-en-python/" class="u-url">Implementación de Agentes en Python</a></h1>
+        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/agentes-en-python/" class="u-url">Agentes en Python</a></h1>
             <div class="metadata">
                 <span class="byline author vcard">
                         <img class="img-circle" src="images/avatar.jpg" alt="icon">
                     Francisco Palm
                 </span>
-                <span class="dateline"><a href="posts/implementacion-de-agentes-en-python/" rel="bookmark">
+                <span class="dateline"><a href="posts/agentes-en-python/" rel="bookmark">
                     <i class="mdi-device-access-time"></i><time class="published dt-published" datetime="2016-09-17T23:26:50-04:00" title="2016-09-17 23:26">2016-09-17 23:26</time></a></span>
-                    <span class="commentline">            <a href="posts/implementacion-de-agentes-en-python/#disqus_thread" data-disqus-identifier="cache/posts/agentes-en-python.html">Comments</a>
+                    <span class="commentline">            <a href="posts/agentes-en-python/#disqus_thread" data-disqus-identifier="cache/posts/agentes-en-python.html">Comments</a>
 
 </span>
             </div>
@@ -81,7 +97,7 @@ MathJax.Hub.Config({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Agentes-en-Python">Agentes en Python<a class="anchor-link" href="posts/implementacion-de-agentes-en-python/#Agentes-en-Python">¶</a>
+<h2 id="Agentes-en-Python">Agentes en Python<a class="anchor-link" href="posts/agentes-en-python/#Agentes-en-Python">¶</a>
 </h2>
 <p>El recién creado grupo de Telegram <a href="https://telegram.me/PyDataVE">https://telegram.me/PyDataVE</a> se creó a partir del interés en el tema de inteligencia artificial.  Desde el punto de vista del libro mas utilizado en el planeta para la enseñanza de Inteligencia Artificial "Artificial Intelligence: A Modern Approach" (AIMA) de Russell y Norvig <a href="http://aima.cs.berkeley.edu/">http://aima.cs.berkeley.edu/</a> quizás el concepto más básico es el de <em>agente</em>.</p>
 <p>En este libro se definen los agentes como:</p>
@@ -99,7 +115,7 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="aima-python">aima-python<a class="anchor-link" href="posts/implementacion-de-agentes-en-python/#aima-python">¶</a>
+<h3 id="aima-python">aima-python<a class="anchor-link" href="posts/agentes-en-python/#aima-python">¶</a>
 </h3>
 <p>En el repositorio "oficial" de python del libro AIMA <a href="https://github.com/aimacode/aima-python/blob/master/agents.py">https://github.com/aimacode/aima-python/blob/master/agents.py</a> codifican del siguiente modo a los agentes. Dado que los agentes son un tipo de cosas con sensores y actuadores, empiezan por definir <em>cosa</em>.</p>
 
@@ -207,7 +223,7 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Modelo-de-Schelling">Modelo de Schelling<a class="anchor-link" href="posts/implementacion-de-agentes-en-python/#Modelo-de-Schelling">¶</a>
+<h3 id="Modelo-de-Schelling">Modelo de Schelling<a class="anchor-link" href="posts/agentes-en-python/#Modelo-de-Schelling">¶</a>
 </h3>
 <p>Un ejemplo clásico de simulación de agentes es el Modelo Dinámico de Segregación de Thomas Schelling de 1971 "Dynamic Models of Segregation" [Journal of Mathematical Sociology. 1 (2): 143–186. doi:10.1080/0022250x.1971.9989794], en el que se representa una simulación de segregación racial en la que a partir de una definición simple del comportamiento individual de los agentes es posible observar como emergen comportamientos colectivos. Estas ideas luego son generalizadas en su libro seminal de 1978 "Micromotives and Macrobehavior" <a href="http://books.wwnorton.com/books/978-0-393-32946-9/">http://books.wwnorton.com/books/978-0-393-32946-9/</a>. Vale la pena señalar que Thomas Schelling fue ganador del Premio Nobel de Economía en el 2005.</p>
 <p>El modelo de Schelling del mundo es una malla; cada celda representa una casa. Las casas están ocupadas por dos clases de personas, con la etiqueta de color rojo y azul, en aproximadamente el mismo número. Una pequeña proporción de las casas están vacías. En cualquier momento, un agente puede ser feliz o infeliz, dependiendo de los otros agentes en el vecindario. La vecindad de cada casa es el conjunto de ocho células adyacentes. En una versión del modelo, los agentes son felices si tienen al menos dos vecinos de su mismo tipo, e infeliz si tienen uno o cero.</p>
@@ -222,7 +238,7 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Mesa">Mesa<a class="anchor-link" href="posts/implementacion-de-agentes-en-python/#Mesa">¶</a>
+<h4 id="Mesa">Mesa<a class="anchor-link" href="posts/agentes-en-python/#Mesa">¶</a>
 </h4>
 <p>Mesa <a href="https://github.com/projectmesa/mesa">https://github.com/projectmesa/mesa</a> es un framework en Python para el desarrollo de simulaciones basadas en agentes que espera convertirse en una alternativa de las bibliotecas mas utilizadas en simulación multiagente que están desarrolladas en Java. La representación abstracta de un agente en Mesa es muy simple:</p>
 
@@ -317,7 +333,7 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Think-Complexity">Think Complexity<a class="anchor-link" href="posts/implementacion-de-agentes-en-python/#Think-Complexity">¶</a>
+<h4 id="Think-Complexity">Think Complexity<a class="anchor-link" href="posts/agentes-en-python/#Think-Complexity">¶</a>
 </h4>
 <p>Finalmente revisemos la implementación de un agente que hace Allen Downey para este mismo modelo en la 2da Edición de su libro "Think Complexity" <a href="https://github.com/AllenDowney/ThinkComplexity2/blob/master/code/chap09.ipynb">https://github.com/AllenDowney/ThinkComplexity2/blob/master/code/chap09.ipynb</a>:</p>
 
@@ -439,31 +455,31 @@ siguientes pasos:</p>
 <li>Clonar ese repositorio y crear un entorno virtual (python 3.4) para
 esa carpeta.</li>
 </ol>
-<pre class="code console"><a name="rest_code_b152fe1540c94a79b585b4fe9df7dc01-1"></a><span class="gp">$</span> git clone https://github.com/<span class="o">[</span>usuario<span class="o">]</span>/<span class="o">[</span>usuario<span class="o">]</span>.github.io.git
-<a name="rest_code_b152fe1540c94a79b585b4fe9df7dc01-2"></a><span class="gp">$</span> mkvirtualenv -p /usr/bin/python3 <span class="o">[</span>usuario<span class="o">]</span>.github.io <span class="c1"># Necesitas tener virtualenvwrapper</span>
-<a name="rest_code_b152fe1540c94a79b585b4fe9df7dc01-3"></a><span class="gp">$</span> <span class="nb">cd</span> <span class="o">[</span>usuario<span class="o">]</span>.github.io.git
+<pre class="code console"><a name="rest_code_0537e841a9414629bf31914b14097c4c-1"></a><span class="gp">$</span> git clone https://github.com/<span class="o">[</span>usuario<span class="o">]</span>/<span class="o">[</span>usuario<span class="o">]</span>.github.io.git
+<a name="rest_code_0537e841a9414629bf31914b14097c4c-2"></a><span class="gp">$</span> mkvirtualenv -p /usr/bin/python3 <span class="o">[</span>usuario<span class="o">]</span>.github.io <span class="c1"># Necesitas tener virtualenvwrapper</span>
+<a name="rest_code_0537e841a9414629bf31914b14097c4c-3"></a><span class="gp">$</span> <span class="nb">cd</span> <span class="o">[</span>usuario<span class="o">]</span>.github.io.git
 </pre>
 <ol class="arabic simple" start="3">
 <li>Crear una rama "sources" para la nueva instancia de nikola</li>
 </ol>
-<pre class="code console"><a name="rest_code_492b8f3d026c47efbc056b4b00c11508-1"></a><span class="gp">$</span> touch README.md <span class="c1"># necesitas al menos un commit</span>
-<a name="rest_code_492b8f3d026c47efbc056b4b00c11508-2"></a><span class="gp">$</span> git add README.md
-<a name="rest_code_492b8f3d026c47efbc056b4b00c11508-3"></a><span class="gp">$</span> git commit REAME.md -m <span class="s2">"Initial commit"</span>
-<a name="rest_code_492b8f3d026c47efbc056b4b00c11508-4"></a><span class="gp">$</span> git branch sources <span class="c1"># la rama con los fuentes de nikola</span>
-<a name="rest_code_492b8f3d026c47efbc056b4b00c11508-5"></a><span class="gp">$</span> git checkout sources <span class="c1"># ahora trabajamos sobre los fuentes</span>
+<pre class="code console"><a name="rest_code_3fdf6f940d5e425a8e06a58bc8d4a025-1"></a><span class="gp">$</span> touch README.md <span class="c1"># necesitas al menos un commit</span>
+<a name="rest_code_3fdf6f940d5e425a8e06a58bc8d4a025-2"></a><span class="gp">$</span> git add README.md
+<a name="rest_code_3fdf6f940d5e425a8e06a58bc8d4a025-3"></a><span class="gp">$</span> git commit REAME.md -m <span class="s2">"Initial commit"</span>
+<a name="rest_code_3fdf6f940d5e425a8e06a58bc8d4a025-4"></a><span class="gp">$</span> git branch sources <span class="c1"># la rama con los fuentes de nikola</span>
+<a name="rest_code_3fdf6f940d5e425a8e06a58bc8d4a025-5"></a><span class="gp">$</span> git checkout sources <span class="c1"># ahora trabajamos sobre los fuentes</span>
 </pre>
 <ol class="arabic simple" start="4">
 <li>En el nuevo entorno virtual y en la rama sources instalar nikola</li>
 </ol>
-<pre class="code console"><a name="rest_code_b49c19628006495eb25991c1c091a541-1"></a><span class="gp">$</span> pip install nikola
-<a name="rest_code_b49c19628006495eb25991c1c091a541-2"></a><span class="gp">$</span> nikola init ./
+<pre class="code console"><a name="rest_code_65d97568d0254c3485344c580025f174-1"></a><span class="gp">$</span> pip install nikola
+<a name="rest_code_65d97568d0254c3485344c580025f174-2"></a><span class="gp">$</span> nikola init ./
 </pre>
 <ol class="arabic simple" start="5">
 <li>En conf.py que debe ahora estar en la raíz del repositorio, descomentar y
 editar las variables</li>
 </ol>
-<pre class="code python"><a name="rest_code_7a70b2191ae04cef95683364c8cc65f5-1"></a><span class="n">GITHUB_SOURCE_BRANCH</span> <span class="o">=</span> <span class="s1">'sources'</span>
-<a name="rest_code_7a70b2191ae04cef95683364c8cc65f5-2"></a><span class="n">GITHUB_DEPLOY_BRANCH</span> <span class="o">=</span> <span class="s1">'master'</span>
+<pre class="code python"><a name="rest_code_e5ea4d2d065a4cab8db44291a652076b-1"></a><span class="n">GITHUB_SOURCE_BRANCH</span> <span class="o">=</span> <span class="s1">'sources'</span>
+<a name="rest_code_e5ea4d2d065a4cab8db44291a652076b-2"></a><span class="n">GITHUB_DEPLOY_BRANCH</span> <span class="o">=</span> <span class="s1">'master'</span>
 </pre>
 <ol class="arabic" start="6">
 <li>
@@ -472,9 +488,9 @@ editar las variables</li>
 <p>Editar el post</p>
 </li>
 </ol>
-<pre class="code console"><a name="rest_code_64953423470f44e6aacead91a88caa8c-1"></a><span class="gp">$</span> git add posts/<span class="o">[</span>nuevo_post<span class="o">]</span>.rst
-<a name="rest_code_64953423470f44e6aacead91a88caa8c-2"></a><span class="gp">$</span> git commit -a <span class="s2">"Add [nuevo_post]"</span>
-<a name="rest_code_64953423470f44e6aacead91a88caa8c-3"></a><span class="gp">$</span> nikola github_deploy
+<pre class="code console"><a name="rest_code_49a489abd18942deb689e8e3425b1eb7-1"></a><span class="gp">$</span> git add posts/<span class="o">[</span>nuevo_post<span class="o">]</span>.rst
+<a name="rest_code_49a489abd18942deb689e8e3425b1eb7-2"></a><span class="gp">$</span> git commit -a <span class="s2">"Add [nuevo_post]"</span>
+<a name="rest_code_49a489abd18942deb689e8e3425b1eb7-3"></a><span class="gp">$</span> nikola github_deploy
 </pre>
 <p>Puede ser conveniente crear el correspondiente .gitignore en la raíz del
 repositorio, con más o menos el siguiente contenido</p>
@@ -525,7 +541,7 @@ MathJax.Hub.Config({
                 <hr>
 </div>
               <div class="modal-body">
-                    Contents © 2016         <a href="mailto:francisco.palm@sani.org.ve">Francisco Palm</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+                    Contents © 2016         <a href="mailto:francisco.palm@gmail.com">Francisco Palm</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a><br>Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.
@@ -543,7 +559,7 @@ Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.
         <div class="kc_fab_wrapper"></div>
 </div>
 
-            <script src="assets/js/all-nocdn.js"></script><script src="assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+            <script src="assets/js/jquery.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/kc.fab.js"></script><script src="assets/js/moment-with-locales.min.js"></script><script src="assets/js/fancydates.js"></script><script src="assets/js/ripples.min.js"></script><script src="assets/js/material.min.js"></script><script src="assets/js/jquery.colorbox-min.js"></script><script src="assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 <a class="addthis_button_more">Share</a>
 <ul>
 <li>
@@ -563,28 +579,28 @@ Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.
 <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script>
                 var links = [
                         {
-                            "icon": "<i class='fa fa-share-square-o'></i>",
                             "bgcolor": "#F44336",
+                            "icon": "<i class='fa fa-share-square-o'></i>",
                         },
                         {
-                            "url": "https://twitter.com/mapologo",
-                            "color": "#fffff",
-                            "bgcolor": "#55ACEE",
                             "target": "_blank",
+                            "url": "https://twitter.com/mapologo",
+                            "bgcolor": "#55ACEE",
+                            "color": "#fffff",
                             "icon": "<i class='fa fa-twitter'></i>",
                         },
                         {
-                            "url": "https://github.com/map0logo",
-                            "color": "#fffff",
-                            "bgcolor": "#666666",
                             "target": "_blank",
+                            "url": "https://github.com/map0logo",
+                            "bgcolor": "#666666",
+                            "color": "#fffff",
                             "icon": "<i class='fa fa-github-square'></i>",
                         },
                         {
-                            "url": "https://www.facebook.com/mapologo",
-                            "color": "#fffff",
-                            "bgcolor": "#3B5998",
                             "target": "_blank",
+                            "url": "https://www.facebook.com/mapologo",
+                            "bgcolor": "#3B5998",
+                            "color": "#fffff",
                             "icon": "<i class='fa fa-facebook'></i>",
                         },
                 ];
