@@ -5,12 +5,11 @@ article: http://ogp.me/ns/article#
 " lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="geomancia matemática, geomática poética">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>map0logo 地図学者 | map0logo 地図学者</title>
-<link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<link rel="canonical" href="http://map0logo.github.io/">
+<title>Implementación de Agentes en Python | map0logo 地図学者</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://map0logo.github.io/posts/implementacion-de-agentes-en-python/">
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -24,9 +23,16 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]>
-            <script src="assets/js/html5shiv.min.js"></script>
-            <script src="assets/js/respond.min.js"></script>
-        <![endif]--><link rel="prefetch" href="posts/implementacion-de-agentes-en-python/" type="text/html">
+            <script src="../../assets/js/html5shiv.min.js"></script>
+            <script src="../../assets/js/respond.min.js"></script>
+        <![endif]--><meta name="author" content="Francisco Palm">
+<link rel="prev" href="../desplegar-nikola-en-github/" title="Desplegar nikola en github" type="text/html">
+<meta property="og:site_name" content="map0logo 地図学者">
+<meta property="og:title" content="Implementación de Agentes en Python">
+<meta property="og:url" content="http://map0logo.github.io/posts/implementacion-de-agentes-en-python/">
+<meta property="og:description" content="Agentes en Python¶El recién creado grupo de Telegram https://telegram.me/PyDataVE se creó a partir del interés en el tema de inteligencia artificial.  Desde el punto de vista del libro mas utilizado e">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-09-17T23:26:50-04:00">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
@@ -38,7 +44,7 @@ MathJax.Hub.Config({
           <div class="col-xs-3">
             <h1 class="title-blog">
                 <a href="http://map0logo.github.io/">
-                        <img src="images/mapologo.png" alt="map0logo 地図学者" id="logo"><span id="blog-title">map0logo 地図学者</span>
+                        <img src="../../images/mapologo.png" alt="map0logo 地図学者" id="logo"><span id="blog-title">map0logo 地図学者</span>
                     </a>
             </h1>
           </div>
@@ -48,32 +54,36 @@ MathJax.Hub.Config({
 </nav><div class="container-fluid main" id="content" role="main">
         <div class="row">
             <nav class="col-xs-3 menu"><ul>
-<li class="withripple"><a href="archive.html">Archivo</a></li>
-                <li class="withripple"><a href="categories/">Etiquetas</a></li>
-                <li class="withripple"><a href="galleries/index.html">Galerias</a></li>
-                <li class="withripple"><a href="stories/acerca-de/">Acerca de</a></li>
-                <li class="withripple"><a href="rss.xml">feed RSS</a></li>
+<li class="withripple"><a href="../../archive.html">Archivo</a></li>
+                <li class="withripple"><a href="../../categories/">Etiquetas</a></li>
+                <li class="withripple"><a href="../../galleries/index.html">Galerias</a></li>
+                <li class="withripple"><a href="../../stories/acerca-de/">Acerca de</a></li>
+                <li class="withripple"><a href="../../rss.xml">feed RSS</a></li>
 
                     
                 </ul>
 <ul class="nav navbar-nav"></ul></nav><div class="posts-material col-xs-9">
                 <div class="col-xs-12 col-md-11 content-material">
-
-    <div class="postindex well post-material ">
-        <article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/implementacion-de-agentes-en-python/" class="u-url">Implementación de Agentes en Python</a></h1>
-            <div class="metadata">
-                <span class="byline author vcard">
-                        <img class="img-circle" src="images/avatar.jpg" alt="icon">
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Implementación de Agentes en Python</a></h1>
+<hr>
+<div class="metadata">
+            <span class="byline author vcard">
+                <a href=".">
+                        <img class="img-circle" src="../../images/avatar.jpg" alt="icon">
                     Francisco Palm
-                </span>
-                <span class="dateline"><a href="posts/implementacion-de-agentes-en-python/" rel="bookmark">
-                    <i class="mdi-device-access-time"></i><time class="published dt-published" datetime="2016-09-17T23:26:50-04:00" title="2016-09-17 23:26">2016-09-17 23:26</time></a></span>
-                    <span class="commentline">            <a href="posts/implementacion-de-agentes-en-python/#disqus_thread" data-disqus-identifier="cache/posts/agentes-en-python.html">Comments</a>
+                </a>
+            </span>
+            <span class="dateline">
+                <a href="." rel="bookmark"><i class="mdi-device-access-time"></i>
+                    <time class="published dt-published" datetime="2016-09-17T23:26:50-04:00" itemprop="datePublished" title="2016-09-17 23:26">2016-09-17 23:26</time></a>
+            </span>
+                <span class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/agentes-en-python.html">Comments</a>
 
 </span>
-            </div>
-            <hr></header><div class="e-content entry-content">
-        <div tabindex="-1" id="notebook" class="border-box-sizing">
+        </div>
+        
+        <hr></header><div class="e-content entry-content" itemprop="articleBody text">
+    <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered">
@@ -81,7 +91,7 @@ MathJax.Hub.Config({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Agentes-en-Python">Agentes en Python<a class="anchor-link" href="posts/implementacion-de-agentes-en-python/#Agentes-en-Python">¶</a>
+<h2 id="Agentes-en-Python">Agentes en Python<a class="anchor-link" href="#Agentes-en-Python">¶</a>
 </h2>
 <p>El recién creado grupo de Telegram <a href="https://telegram.me/PyDataVE">https://telegram.me/PyDataVE</a> se creó a partir del interés en el tema de inteligencia artificial.  Desde el punto de vista del libro mas utilizado en el planeta para la enseñanza de Inteligencia Artificial "Artificial Intelligence: A Modern Approach" (AIMA) de Russell y Norvig <a href="http://aima.cs.berkeley.edu/">http://aima.cs.berkeley.edu/</a> quizás el concepto más básico es el de <em>agente</em>.</p>
 <p>En este libro se definen los agentes como:</p>
@@ -99,7 +109,7 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="aima-python">aima-python<a class="anchor-link" href="posts/implementacion-de-agentes-en-python/#aima-python">¶</a>
+<h3 id="aima-python">aima-python<a class="anchor-link" href="#aima-python">¶</a>
 </h3>
 <p>En el repositorio "oficial" de python del libro AIMA <a href="https://github.com/aimacode/aima-python/blob/master/agents.py">https://github.com/aimacode/aima-python/blob/master/agents.py</a> codifican del siguiente modo a los agentes. Dado que los agentes son un tipo de cosas con sensores y actuadores, empiezan por definir <em>cosa</em>.</p>
 
@@ -207,7 +217,7 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Modelo-de-Schelling">Modelo de Schelling<a class="anchor-link" href="posts/implementacion-de-agentes-en-python/#Modelo-de-Schelling">¶</a>
+<h3 id="Modelo-de-Schelling">Modelo de Schelling<a class="anchor-link" href="#Modelo-de-Schelling">¶</a>
 </h3>
 <p>Un ejemplo clásico de simulación de agentes es el Modelo Dinámico de Segregación de Thomas Schelling de 1971 "Dynamic Models of Segregation" [Journal of Mathematical Sociology. 1 (2): 143–186. doi:10.1080/0022250x.1971.9989794], en el que se representa una simulación de segregación racial en la que a partir de una definición simple del comportamiento individual de los agentes es posible observar como emergen comportamientos colectivos. Estas ideas luego son generalizadas en su libro seminal de 1978 "Micromotives and Macrobehavior" <a href="http://books.wwnorton.com/books/978-0-393-32946-9/">http://books.wwnorton.com/books/978-0-393-32946-9/</a>. Vale la pena señalar que Thomas Schelling fue ganador del Premio Nobel de Economía en el 2005.</p>
 <p>El modelo de Schelling del mundo es una malla; cada celda representa una casa. Las casas están ocupadas por dos clases de personas, con la etiqueta de color rojo y azul, en aproximadamente el mismo número. Una pequeña proporción de las casas están vacías. En cualquier momento, un agente puede ser feliz o infeliz, dependiendo de los otros agentes en el vecindario. La vecindad de cada casa es el conjunto de ocho células adyacentes. En una versión del modelo, los agentes son felices si tienen al menos dos vecinos de su mismo tipo, e infeliz si tienen uno o cero.</p>
@@ -222,7 +232,7 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Mesa">Mesa<a class="anchor-link" href="posts/implementacion-de-agentes-en-python/#Mesa">¶</a>
+<h4 id="Mesa">Mesa<a class="anchor-link" href="#Mesa">¶</a>
 </h4>
 <p>Mesa <a href="https://github.com/projectmesa/mesa">https://github.com/projectmesa/mesa</a> es un framework en Python para el desarrollo de simulaciones basadas en agentes que espera convertirse en una alternativa de las bibliotecas mas utilizadas en simulación multiagente que están desarrolladas en Java. La representación abstracta de un agente en Mesa es muy simple:</p>
 
@@ -317,7 +327,7 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Think-Complexity">Think Complexity<a class="anchor-link" href="posts/implementacion-de-agentes-en-python/#Think-Complexity">¶</a>
+<h4 id="Think-Complexity">Think Complexity<a class="anchor-link" href="#Think-Complexity">¶</a>
 </h4>
 <p>Finalmente revisemos la implementación de un agente que hace Allen Downey para este mismo modelo en la 2da Edición de su libro "Think Complexity" <a href="https://github.com/AllenDowney/ThinkComplexity2/blob/master/code/chap09.ipynb">https://github.com/AllenDowney/ThinkComplexity2/blob/master/code/chap09.ipynb</a>:</p>
 
@@ -414,97 +424,35 @@ El comportamiento del agente viene dado por la <strong>función del agente</stro
     </div>
   </div>
 
-        </div>
-        </article><article class="h-entry post-text"><header><h1 class="p-name entry-title header"><a href="posts/desplegar-nikola-en-github/" class="u-url">Desplegar nikola en github</a></h1>
-            <div class="metadata">
-                <span class="byline author vcard">
-                        <img class="img-circle" src="images/avatar.jpg" alt="icon">
-                    Francisco Palm
-                </span>
-                <span class="dateline"><a href="posts/desplegar-nikola-en-github/" rel="bookmark">
-                    <i class="mdi-device-access-time"></i><time class="published dt-published" datetime="2014-09-01T22:39:11-05:30" title="2014-09-01 22:39">2014-09-01 22:39</time></a></span>
-                    <span class="commentline">            <a href="posts/desplegar-nikola-en-github/#disqus_thread" data-disqus-identifier="cache/posts/desplegar-nikola-en-github.html">Comments</a>
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager">
+<li class="previous">
+                <a href="../desplegar-nikola-en-github/" rel="prev" title="Desplegar nikola en github">Publicación anterior</a>
+            </li>
+        </ul></nav></aside><section class="comments"><h2>
+<i class="mdi-communication-forum"></i>Comentarios</h2>
+        <hr>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="map0logo",
+            disqus_url="http://map0logo.github.io/posts/implementacion-de-agentes-en-python/",
+        disqus_title="Implementaci\u00f3n de Agentes en Python",
+        disqus_identifier="cache/posts/agentes-en-python.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
-</span>
-            </div>
-            <hr></header><div class="e-content entry-content">
-        <div>
-<p>Importante seguir las instrucciones con atención, no vale la pena intentar ser
-originales :-D.</p>
-<p>Para crear un despliegue de nikola en github como página principal seguir los
-siguientes pasos:</p>
-<ol class="arabic simple">
-<li>Crear en tu cuenta de github un repositorio con nombre <tt class="docutils literal"><span class="pre">[usuario].github.io</span></tt>
-</li>
-<li>Clonar ese repositorio y crear un entorno virtual (python 3.4) para
-esa carpeta.</li>
-</ol>
-<pre class="code console"><a name="rest_code_b152fe1540c94a79b585b4fe9df7dc01-1"></a><span class="gp">$</span> git clone https://github.com/<span class="o">[</span>usuario<span class="o">]</span>/<span class="o">[</span>usuario<span class="o">]</span>.github.io.git
-<a name="rest_code_b152fe1540c94a79b585b4fe9df7dc01-2"></a><span class="gp">$</span> mkvirtualenv -p /usr/bin/python3 <span class="o">[</span>usuario<span class="o">]</span>.github.io <span class="c1"># Necesitas tener virtualenvwrapper</span>
-<a name="rest_code_b152fe1540c94a79b585b4fe9df7dc01-3"></a><span class="gp">$</span> <span class="nb">cd</span> <span class="o">[</span>usuario<span class="o">]</span>.github.io.git
-</pre>
-<ol class="arabic simple" start="3">
-<li>Crear una rama "sources" para la nueva instancia de nikola</li>
-</ol>
-<pre class="code console"><a name="rest_code_492b8f3d026c47efbc056b4b00c11508-1"></a><span class="gp">$</span> touch README.md <span class="c1"># necesitas al menos un commit</span>
-<a name="rest_code_492b8f3d026c47efbc056b4b00c11508-2"></a><span class="gp">$</span> git add README.md
-<a name="rest_code_492b8f3d026c47efbc056b4b00c11508-3"></a><span class="gp">$</span> git commit REAME.md -m <span class="s2">"Initial commit"</span>
-<a name="rest_code_492b8f3d026c47efbc056b4b00c11508-4"></a><span class="gp">$</span> git branch sources <span class="c1"># la rama con los fuentes de nikola</span>
-<a name="rest_code_492b8f3d026c47efbc056b4b00c11508-5"></a><span class="gp">$</span> git checkout sources <span class="c1"># ahora trabajamos sobre los fuentes</span>
-</pre>
-<ol class="arabic simple" start="4">
-<li>En el nuevo entorno virtual y en la rama sources instalar nikola</li>
-</ol>
-<pre class="code console"><a name="rest_code_b49c19628006495eb25991c1c091a541-1"></a><span class="gp">$</span> pip install nikola
-<a name="rest_code_b49c19628006495eb25991c1c091a541-2"></a><span class="gp">$</span> nikola init ./
-</pre>
-<ol class="arabic simple" start="5">
-<li>En conf.py que debe ahora estar en la raíz del repositorio, descomentar y
-editar las variables</li>
-</ol>
-<pre class="code python"><a name="rest_code_7a70b2191ae04cef95683364c8cc65f5-1"></a><span class="n">GITHUB_SOURCE_BRANCH</span> <span class="o">=</span> <span class="s1">'sources'</span>
-<a name="rest_code_7a70b2191ae04cef95683364c8cc65f5-2"></a><span class="n">GITHUB_DEPLOY_BRANCH</span> <span class="o">=</span> <span class="s1">'master'</span>
-</pre>
-<ol class="arabic" start="6">
-<li>
-<p class="first">Finalmente añadir algo de contenido usando <tt class="docutils literal">nikola new_post</tt> o
-<tt class="docutils literal">nikola new_page</tt>, ¡ojo!, siempre en la rama <tt class="docutils literal">sources</tt></p>
-<p>Editar el post</p>
-</li>
-</ol>
-<pre class="code console"><a name="rest_code_64953423470f44e6aacead91a88caa8c-1"></a><span class="gp">$</span> git add posts/<span class="o">[</span>nuevo_post<span class="o">]</span>.rst
-<a name="rest_code_64953423470f44e6aacead91a88caa8c-2"></a><span class="gp">$</span> git commit -a <span class="s2">"Add [nuevo_post]"</span>
-<a name="rest_code_64953423470f44e6aacead91a88caa8c-3"></a><span class="gp">$</span> nikola github_deploy
-</pre>
-<p>Puede ser conveniente crear el correspondiente .gitignore en la raíz del
-repositorio, con más o menos el siguiente contenido</p>
-<pre class="literal-block">
-.idea/
-__pycache__/
-output/
-cache/
-.doit.db
-</pre>
-<p><tt class="docutils literal">.idea</tt> para proyectos de pycharm, el resto son carpetas y archivos generados
-por nikola.</p>
-</div>
-        </div>
-        </article>
-</div>
 
-               <script>var disqus_shortname="map0logo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-        processEscapes: true
-    },
-    displayAlign: 'left', // Change this to 'center' to center equations.
-    "HTML-CSS": {
-        styles: {'.MathJax_Display': {"margin": 0}}
-    }
-});
-</script>
+        </section><script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});</script><script src="../../assets/js/mathjax.js"></script></article><script>var disqus_shortname="map0logo";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>
             </div>
         </div>
@@ -519,7 +467,7 @@ MathJax.Hub.Config({
                 <h4 class="modal-title">Francisco Palm</h4>
                 <div>
                     
-<img class="img-circle" style="float:left;margin:10px 20px 10px 0px;max-height:200px;" src="images/avatar.jpg"><p>Francisco Palm (팜 시스코) poetic geomatics, mathematical geomancy, hacktivist, Python &amp; R, Pop &amp; Rock Indie, Geek &amp; Otaku, Zen &amp; K, Massive Empowerment</p>
+<img class="img-circle" style="float:left;margin:10px 20px 10px 0px;max-height:200px;" src="../../images/avatar.jpg"><p>Francisco Palm (팜 시스코) poetic geomatics, mathematical geomancy, hacktivist, Python &amp; R, Pop &amp; Rock Indie, Geek &amp; Otaku, Zen &amp; K, Massive Empowerment</p>
 
                 </div>
                 <hr>
@@ -539,11 +487,15 @@ Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.
           </div>
         </div>
         <div class="source-button">
+    <a class="btn btn-fab btn-raised btn-material-indigo" target="_blank" href="index.ipynb" title="Código fuente">
+        <i class="mdi-file-cloud-download"></i>
+    </a>
+
         </div>
         <div class="kc_fab_wrapper"></div>
 </div>
 
-            <script src="assets/js/all-nocdn.js"></script><script src="assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 <a class="addthis_button_more">Share</a>
 <ul>
 <li>
