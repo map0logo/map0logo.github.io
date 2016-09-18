@@ -1230,30 +1230,29 @@ BIOGRAPHY = """
 <p>Francisco Palm (팜 시스코) poetic geomatics, mathematical geomancy, hacktivist, Python & R, Pop & Rock Indie, Geek & Otaku, Zen & K, Massive Empowerment</p>
 """
 
-GLOBAL_CONTEXT = {                                                
-     'header_color': 'success',
-
+GLOBAL_CONTEXT = {
+    'header_color': 'success',
     "social_links": [
     {
         'bgcolor': "#F44336",
         'icon': "<i class='fa fa-share-square-o'></i>"
     },
     {
-        "url": "https://twitter.com/",
+        "url": "https://twitter.com/mapologo",
         "bgcolor": "#55ACEE",
         "color": "#fffff",
         "icon": "<i class='fa fa-twitter'></i>",
         "target": "_blank"
     },
     {
-        "url": "https://github.com/",
+        "url": "https://github.com/map0logo",
         "bgcolor": "#666666",
         "color": "#fffff",
         "icon": "<i class='fa fa-github-square'></i>",
         "target": "_blank"
     },
     {
-        "url": "https://www.facebook.com",
+        "url": "https://www.facebook.com/mapologo",
         "bgcolor": "#3B5998",
         "color": "#fffff",
         "icon": "<i class='fa fa-facebook'></i>",
@@ -1261,7 +1260,7 @@ GLOBAL_CONTEXT = {
     },
     ],
     "biography": BIOGRAPHY,
-    'author_avatar': '/images/avatar.jpg',                                 
+    'author_avatar': '/images/avatar.jpg',
 }
 
 # Add functions here and they will be called with template
